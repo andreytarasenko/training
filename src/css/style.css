@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
+body {
+	font-size: 16px;
+	font-weight: 400;
+	line-height: 150%;
+	font-style: normal;
+	font-family: "PT Sans", sans-serif;
+	color: #6b6b6c;
+	background: #e5e5e5;
+}
+.container_main {
+	display: flex;
+	justify-content: center;
+	margin: 0 auto;
+	max-width: 80%;
+	width: 100%;
+
+	background-color: #000000;
+}
+header {
+	display: flex;
+	max-width: 90%;
+	width: 100%;
+	flex-direction: column;
+}
+.top-block_header {
+	padding: 50px 30px 20px 30px;
+	display: flex;
+	background-color: aquamarine;
+	justify-content: space-between;
+}
+.top-block_header-desc {
+	padding: 30px;
+}
+.gen_header {
+	color: #363738;
+	font-family: "Exo 2", sans-serif;
+	line-height: 125%;
+	font-weight: 600;
+}
+.tit_header {
+}
+.signature_header {
+	padding: 20px 0;
+}
+.but_more {
+	border: none;
+	border-bottom: 4px yellow solid;
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+.but_more:hover {
+	border-bottom: 5px rgb(0, 255, 64) solid;
+	transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+}
+.top-block_header-img {
+}
+.benefits {
+}
+.icon_benefits {
+}
+.tit_benefits {
+	font-family: "Exo 2", sans-serif;
+}
+.signature_benefits {
+}
