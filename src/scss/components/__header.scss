@@ -1,37 +1,13 @@
-@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@600&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=PT+Sans&display=swap");
-%title {
-	font-family: "Exo 2";
-	font-style: normal;
-	font-weight: 600;
-	color: #363738;
-}
-body {
-	font-size: 21px;
-	padding: 0;
-	margin: 0;
-	font-weight: 400;
-	font-style: normal;
-	font-family: "PT Sans", sans-serif;
-	color: #6b6b6c;
-	background: #f8f8f8;
-}
 .background {
 	position: absolute;
 	z-index: -1;
 	right: 0;
 	top: 0px;
-	max-width: 600px;
-	max-height: 875px;
+	max-width: 40%;
+	max-height: 73.4%;
+	// ?я без понятия что делать с бекграундом
 	width: 100%;
 	height: 100%;
-}
-.container {
-	position: relative;
-	display: flex;
-	justify-content: center;
-	margin: 0 auto;
-	width: 100%;
 }
 .header {
 	display: flex;
@@ -51,10 +27,10 @@ body {
 	}
 
 	&__title {
+		@extend %title;
 		font-size: 62px;
 		max-width: 700px;
 		width: 100%;
-		@extend %title;
 	}
 
 	&__subtitle {
@@ -88,7 +64,7 @@ body {
 	&__image {
 		width: 100%;
 		min-width: 650px;
-		min-height: 450px;
+		border-radius: 5%;
 	}
 
 	&__bottom-block {
@@ -104,10 +80,11 @@ body {
 	&__list {
 		width: 100%;
 		display: flex;
+		padding: 0;
+		margin: 0;
 	}
 
 	&__item {
-		flex-wrap: wrap;
 		width: 100%;
 		display: flex;
 		flex-direction: column;
@@ -120,23 +97,38 @@ body {
 		border-right: 0.1px rgba(175, 175, 175, 0.438) solid;
 	}
 }
+
 // .subtitle {
 // }
 .header-item {
-	// &__block {
-	// }
-
+	&__block {
+		width: 100%;
+		display: flex;
+		justify-content: center;
+		flex-direction: column;
+		align-items: center;
+	}
+	.header-item__text {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
 	&__image {
 		padding-bottom: 30px;
+		margin-right: 200px;
+		width: 100px;
 	}
 
 	&__caption {
 		font-size: 24px;
 		@extend %title;
+		width: 50%;
 	}
 
-	// &__subtitle {
-	// }
+	&__subtitle {
+		max-width: 50%;
+	}
 }
 //  .caption {
 // }
