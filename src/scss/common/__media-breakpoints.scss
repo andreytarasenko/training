@@ -18,3 +18,8 @@
 		@content;
 	}
 }
+@mixin jojo1285() {
+	@media (max-width: 1200px) {
+		@content;
+	}
+}

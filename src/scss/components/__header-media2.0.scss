@@ -1,0 +1,215 @@
+@include jojo1285 {
+	.header {
+		// .header__upper-block
+		//!пустышки не удаляю т.к. понадобится еще
+		&__upper-block {
+		}
+
+		// .header__description
+
+		&__description {
+		}
+
+		// .header__title
+
+		&__title {
+			font-size: 48px;
+		}
+
+		// .header__subtitle
+
+		&__subtitle {
+		}
+
+		// .header__button
+
+		&__button {
+		}
+
+		// .header__image
+
+		&__image {
+		}
+
+		// .header__bottom-block
+
+		&__bottom-block {
+		}
+
+		// .header__list
+
+		&__list {
+		}
+
+		// .header__item
+
+		&__item {
+		}
+
+		// .header__item--modborder
+
+		&__item--modborder {
+		}
+	}
+	.title {
+	}
+	.subtitle {
+	}
+	.header-item {
+		// .header-item__block
+
+		&__block {
+		}
+
+		// .header-item__image
+
+		&__image {
+			padding-left: 20px;
+			width: 92px;
+		}
+
+		// .header-item__text
+
+		&__text {
+		}
+
+		// .header-item__caption
+
+		&__caption {
+		}
+
+		// .header-item__subtitle
+
+		&__subtitle {
+		}
+	}
+	.caption {
+	}
+}
+@include tablet {
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+	.background {
+		display: none;
+		// max-width: 20%;
+	}
+	.header {
+		// .header__upper-block
+		margin-top: 0px;
+		&__upper-block {
+			flex-wrap: wrap;
+			align-content: center;
+		}
+
+		// .header__description
+
+		&__description {
+			padding-bottom: -30px;
+			padding-left: 0px;
+		}
+
+		// .header__title
+
+		&__title {
+			font-size: 48px;
+		}
+
+		// .header__subtitle
+
+		&__subtitle {
+		}
+
+		// .header__button
+
+		&__button {
+		}
+
+		// .header__image
+
+		&__image {
+			max-width: 690px;
+			width: 100%;
+			height: 40%;
+			margin: 0 auto;
+			padding-left: 0px;
+		}
+
+		// .header__bottom-block
+
+		&__bottom-block {
+			margin-top: 0px;
+			box-shadow: none;
+			border: none;
+			background: none;
+		}
+
+		// .header__list
+
+		&__list {
+			flex-direction: column;
+		}
+
+		// .header__item
+
+		&__item {
+			flex-direction: row;
+			box-shadow: 0px 5px 10px 9px rgba(34, 60, 80, 0.2);
+			border-radius: 25px;
+			margin: 0px 0 30px 0;
+		}
+
+		// .header__item--modborder
+
+		&__item--modborder {
+		}
+	}
+	.title {
+	}
+	.subtitle {
+	}
+	.header-item {
+		// .header-item__block
+
+		&__block {
+			display: flex;
+			flex-direction: row;
+			padding: 30px 0;
+			margin: 0 auto;
+		}
+
+		// .header-item__image
+
+		&__image {
+			width: 92px;
+			margin-right: 50px;
+			padding-left: 0px;
+		}
+
+		// .header-item__text
+
+		&__text {
+			padding-right: 50px;
+			display: inline;
+		}
+
+		// .header-item__caption
+
+		&__caption {
+			font-size: 20px;
+			width: 100%;
+			max-width: 360px;
+		}
+
+		// .header-item__subtitle
+
+		&__subtitle {
+			font-size: 16px;
+			width: 100%;
+			max-width: 400px;
+		}
+	}
+	.caption {
+	}
+}
