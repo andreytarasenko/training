@@ -1,100 +1,11 @@
-@include jojo1285 {
-	.header {
-		// .header__upper-block
-		//!пустышки не удаляю т.к. понадобится еще
-		&__upper-block {
-			max-height: 650px;
-		}
-
-		// .header__description
-
-		&__description {
-		}
-
-		// .header__title
-
-		&__title {
-			font-size: 48px;
-		}
-
-		// .header__subtitle
-
-		&__subtitle {
-		}
-
-		// .header__button
-
-		&__button {
-		}
-
-		// .header__image
-
-		&__image {
-		}
-
-		// .header__bottom-block
-
-		&__bottom-block {
-		}
-
-		// .header__list
-
-		&__list {
-		}
-
-		// .header__item
-
-		&__item {
-		}
-
-		// .header__item--modborder
-
-		&__item--modborder {
-		}
-	}
-	.title {
-	}
-	.subtitle {
-	}
-	.header-item {
-		// .header-item__block
-
-		&__block {
-		}
-
-		// .header-item__image
-
-		&__image {
-			padding-left: 20px;
-			width: 92px;
-		}
-
-		// .header-item__text
-
-		&__text {
-		}
-
-		// .header-item__caption
-
-		&__caption {
-		}
-
-		// .header-item__subtitle
-
-		&__subtitle {
-		}
-	}
-	.caption {
-	}
-}
-@include tablet {
+@media screen and (min-width: 376px) and (max-width: 768px) {
 	.container {
 		width: 90%;
 		margin: 0 auto;
 	}
 	.background {
-		display: none;
 		// max-width: 20%;
+		right: -30px;
 	}
 	.header {
 		// .header__upper-block
@@ -127,7 +38,9 @@
 
 		&__subtitle {
 		}
-
+		.header__subtitile-item {
+			color: black;
+		}
 		// .header__button
 
 		&__button {
@@ -138,9 +51,8 @@
 
 		&__image {
 			max-width: 690px;
-
+			width: 100%;
 			max-height: 314px;
-			min-width: 100%;
 			margin: 0 auto;
 			padding-left: 0px;
 		}
@@ -166,7 +78,7 @@
 			flex-direction: row;
 			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
 			border-radius: 20px;
-			padding: 20px 0;
+			padding: 10px 0;
 			margin: 0px 0 15px 0;
 		}
 
@@ -219,5 +131,161 @@
 		}
 	}
 	.caption {
+	}
+}
+
+@media screen and (max-width: 375px) {
+	body {
+		// font-size: 10px; !ПОЧЕМУ!
+	}
+	p {
+		margin-bottom: 0px;
+	}
+	.container {
+		width: 90%;
+		margin: 0 auto;
+	}
+
+	.header {
+		// .header__upper-block
+		display: flex;
+		margin-top: 0px;
+		padding: 0px;
+		&__upper-block {
+			flex-wrap: wrap;
+			// margin-bottom: 20px;
+		}
+
+		// .header__description
+
+		&__description {
+			padding-left: 0px;
+			display: flex;
+			max-width: 100%;
+			max-height: 100%;
+			padding-bottom: 0;
+			margin-top: 20px;
+			color: rgb(255, 255, 255);
+		}
+
+		// .header__title
+
+		// .header__subtitle
+		&__subtitle {
+		}
+		// .header__button
+
+		&__button {
+			margin-top: 20px;
+			margin-bottom: 30px;
+			a {
+				color: white;
+				font-weight: 500;
+				font-size: 15px;
+			}
+		}
+
+		// .header__image
+
+		&__image {
+			max-width: 690px;
+			width: 100%;
+			max-height: 314px;
+			margin: 0 auto;
+			padding-left: 0px;
+		}
+
+		// .header__bottom-block
+
+		&__bottom-block {
+			// margin-top: 50px;
+			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+			border-radius: 20px;
+		}
+
+		// .header__list
+
+		&__list {
+			flex-direction: column;
+		}
+
+		// .header__item
+
+		&__item {
+			flex-direction: column;
+			// box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
+			// border-radius: 20px;
+			margin: 0px 0 15px 0;
+		}
+
+		// .header__item--modborder
+
+		&__item--modborder {
+		}
+	}
+	.header-item {
+		// .header-item__block
+		padding: 0;
+		&__block {
+			flex-direction: column;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-start;
+			padding-left: 25px;
+		}
+
+		// .header-item__image
+
+		&__image {
+			max-width: 68px;
+			padding-left: 0px;
+			margin: 0;
+			padding: 0;
+		}
+
+		// .header-item__text
+
+		&__text {
+			width: 100%;
+
+			// .header-item__caption
+		}
+		&__caption {
+			font-size: 18px;
+			max-width: 220px;
+		}
+
+		// .header-item__subtitle
+
+		&__subtitle {
+			margin: 0px;
+			width: 100%;
+			font-size: 15px;
+			max-width: none;
+			padding: 0;
+		}
+	}
+
+	.header__title {
+		font-size: 28px;
+		color: rgb(255, 255, 255);
+	}
+	.header__subtitle-item--invisible {
+		display: none;
+	}
+	.header__subtitle-item--visible {
+		display: inline;
+		font-size: 14.5px;
+		padding: 10px 0;
+		font-weight: normal;
+		width: 100%;
+	}
+	// .header__subtitle
+
+	.background {
+		width: 100%;
+		right: 0;
+		top: 0;
+		height: 710px;
 	}
 }

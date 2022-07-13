@@ -1,5 +1,14 @@
 {
 	"liveServer.settings.port": 5501,
 	"compile-hero.disable-compile-files-on-did-save-code": false,
-	"cSpell.words": ["modborder"]
+	"cSpell.words": ["modborder"],
+	"liveSassCompile.settings.generateMap": false,
+	"liveSassCompile.settings.formats": [
+		{
+			"format": "expanded",
+			"autoprefix": "last 5 versions",
+			"extensionName": ".css",
+			"savePath": "src/css"
+		}
+	]
 }
