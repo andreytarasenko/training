@@ -1,26 +1,54 @@
 {
 	"name": "training",
 	"version": "1.0.0",
-	"description": "Макет- https://www.figma.com/file/aOA6R4pp00AD69HTPfrvwq/%D0%9F%D0%94%D0%92-Landing-page?node-id=0%3A1",
-	"main": "index.js",
+	"description": "",
+	"main": "gulpfile.js",
+	"type": "module",
 	"scripts": {
-		"test": "echo \"Error: no test specified\" && exit 1"
+		"dev": "gulp",
+		"build": "gulp build --build",
+		"zip": "gulp deployZIP --build",
+		"deploy": "gulp deployFTP --build",
+		"svgSprive": "gulp svgSpriteTask"
 	},
-	"repository": {
-		"type": "git",
-		"url": "git+https://github.com/andreytarasenko/training.git"
-	},
-	"author": "",
+	"author": "jojo",
 	"license": "ISC",
-	"bugs": {
-		"url": "https://github.com/andreytarasenko/training/issues"
+	"dependencies": {
+		"gulp-cli": "^2.3.0"
 	},
-	"homepage": "https://github.com/andreytarasenko/training#readme",
 	"devDependencies": {
-		"del": "^6.1.1",
-		"gulp": "^4.0.2",
-		"gulp-clean-css": "^4.3.0",
-		"gulp-sass": "^5.1.0",
-		"sass": "^1.53.0"
+		"browser-sync": "latest",
+		"del": "latest",
+		"glob": "^8.0.3",
+		"gulp": "latest",
+		"gulp-autoprefixer": "latest",
+		"gulp-clean-css": "latest",
+		"gulp-file-include": "latest",
+		"gulp-fonter-fix": "latest",
+		"gulp-group-css-media-queries": "latest",
+		"gulp-if": "latest",
+		"gulp-imagemin": "latest",
+		"gulp-newer": "latest",
+		"gulp-notify": "latest",
+		"gulp-plumber": "latest",
+		"gulp-pug": "latest",
+		"gulp-rename": "latest",
+		"gulp-replace": "latest",
+		"gulp-sass": "latest",
+		"gulp-svg-sprite": "latest",
+		"gulp-ttf2woff2": "latest",
+		"gulp-util": "latest",
+		"gulp-version-number": "latest",
+		"gulp-webp": "latest",
+		"gulp-webp-html-nosvg": "latest",
+		"gulp-webpcss": "latest",
+		"gulp-zip": "latest",
+		"sass": "latest",
+		"singular": "^2.4.2",
+		"swiper": "latest",
+		"vinyl-ftp": "latest",
+		"webp-converter": "2.2.3",
+		"webpack": "latest",
+		"webpack-stream": "latest"
 	}
 }
