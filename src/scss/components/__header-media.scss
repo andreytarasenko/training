@@ -1,23 +1,17 @@
 @media screen and (min-width: 376px) and (max-width: 768px) {
 	.container {
-		width: 90%;
-		margin: 0 auto;
+		width: 100%;
 	}
-	.background {
-		// max-width: 20%;
+
+	.separated-block {
 		right: -30px;
 	}
 	.header {
-		// .header__upper-block
 		display: flex;
-		margin-top: 0px;
-		margin-top: 80px;
+		margin-top: 70px;
 		&__upper-block {
 			flex-wrap: wrap;
-			// margin-bottom: 20px;
 		}
-
-		// .header__description
 
 		&__description {
 			padding-left: 0px;
@@ -28,26 +22,9 @@
 			padding-bottom: 0;
 		}
 
-		// .header__title
-
 		&__title {
 			font-size: 48px;
 		}
-
-		// .header__subtitle
-
-		&__subtitle {
-		}
-		.header__subtitile-item {
-			color: black;
-		}
-		// .header__button
-
-		&__button {
-			margin-bottom: 60px;
-		}
-
-		// .header__image
 
 		&__image {
 			max-width: 690px;
@@ -57,87 +34,53 @@
 			padding-left: 0px;
 		}
 
-		// .header__bottom-block
-
 		&__bottom-block {
-			// margin-top: 50px;
 			box-shadow: none;
 			border: none;
 			background: none;
 		}
 
-		// .header__list
-
 		&__list {
 			flex-direction: column;
 		}
-
-		// .header__item
 
 		&__item {
 			flex-direction: row;
 			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
 			border-radius: 20px;
-			padding: 10px 0;
 			margin: 0px 0 15px 0;
-		}
-
-		// .header__item--modborder
-
-		&__item--modborder {
-		}
-	}
-	.title {
-	}
-	.subtitle {
-	}
-	.header-item {
-		// .header-item__block
-
-		&__block {
+			width: 100%;
 			display: flex;
 			flex-direction: row;
 			justify-content: flex-start;
-			padding-left: 30px;
 		}
+	}
 
-		// .header-item__image
-
+	.header-item {
 		&__image {
 			width: 92px;
 			margin-right: 32px;
 			padding-left: 0px;
 		}
 
-		// .header-item__text
-
 		&__text {
 			display: inline;
 			width: 100%;
 		}
-
-		// .header-item__caption
 
 		&__caption {
 			font-size: 20px;
 			min-width: 100%;
 		}
 
-		// .header-item__subtitle
-
 		&__subtitle {
 			min-width: 100%;
 			font-size: 16px;
 		}
 	}
-	.caption {
-	}
 }
 
 @media screen and (max-width: 375px) {
-	body {
-		// font-size: 10px; !ПОЧЕМУ!
-	}
 	p {
 		margin-bottom: 0px;
 	}
@@ -147,16 +90,12 @@
 	}
 
 	.header {
-		// .header__upper-block
 		display: flex;
 		margin-top: 0px;
 		padding: 0px;
 		&__upper-block {
 			flex-wrap: wrap;
-			// margin-bottom: 20px;
 		}
-
-		// .header__description
 
 		&__description {
 			padding-left: 0px;
@@ -164,28 +103,24 @@
 			max-width: 100%;
 			max-height: 100%;
 			padding-bottom: 0;
-			margin-top: 20px;
+			margin-top: 80px;
 			color: rgb(255, 255, 255);
 		}
 
-		// .header__title
-
-		// .header__subtitle
 		&__subtitle {
+			margin: 0;
 		}
-		// .header__button
 
-		&__button {
-			margin-top: 20px;
-			margin-bottom: 30px;
+		&__ link {
+			margin-bottom: 20px;
+			color: white;
+
 			a {
 				color: white;
 				font-weight: 500;
 				font-size: 15px;
 			}
 		}
-
-		// .header__image
 
 		&__image {
 			max-width: 690px;
@@ -195,46 +130,25 @@
 			padding-left: 0px;
 		}
 
-		// .header__bottom-block
-
 		&__bottom-block {
-			// margin-top: 50px;
 			box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
 			border-radius: 20px;
 		}
-
-		// .header__list
 
 		&__list {
 			flex-direction: column;
 		}
 
-		// .header__item
-
 		&__item {
-			flex-direction: column;
-			// box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.12);
-			// border-radius: 20px;
-			margin: 0px 0 15px 0;
-		}
-
-		// .header__item--modborder
-
-		&__item--modborder {
-		}
-	}
-	.header-item {
-		// .header-item__block
-		padding: 0;
-		&__block {
 			flex-direction: column;
 			display: flex;
 			align-items: flex-start;
 			justify-content: flex-start;
-			padding-left: 25px;
+			margin: 0px 0 15px 0;
 		}
-
-		// .header-item__image
+	}
+	.header-item {
+		padding: 0;
 
 		&__image {
 			max-width: 68px;
@@ -243,19 +157,13 @@
 			padding: 0;
 		}
 
-		// .header-item__text
-
 		&__text {
 			width: 100%;
-
-			// .header-item__caption
 		}
 		&__caption {
 			font-size: 18px;
 			max-width: 220px;
 		}
-
-		// .header-item__subtitle
 
 		&__subtitle {
 			margin: 0px;
@@ -280,9 +188,8 @@
 		font-weight: normal;
 		width: 100%;
 	}
-	// .header__subtitle
 
-	.background {
+	.separated-block {
 		width: 100%;
 		right: 0;
 		top: 0;

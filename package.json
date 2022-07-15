@@ -1,0 +1,26 @@
+{
+	"name": "training",
+	"version": "1.0.0",
+	"description": "Макет- https://www.figma.com/file/aOA6R4pp00AD69HTPfrvwq/%D0%9F%D0%94%D0%92-Landing-page?node-id=0%3A1",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/andreytarasenko/training.git"
+	},
+	"author": "",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/andreytarasenko/training/issues"
+	},
+	"homepage": "https://github.com/andreytarasenko/training#readme",
+	"devDependencies": {
+		"del": "^6.1.1",
+		"gulp": "^4.0.2",
+		"gulp-clean-css": "^4.3.0",
+		"gulp-sass": "^5.1.0",
+		"sass": "^1.53.0"
+	}
+}
