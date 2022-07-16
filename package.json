@@ -1,5 +1,5 @@
 {
-	"name": "training",
+	"name": "gulp-2022",
 	"version": "1.0.0",
 	"description": "",
 	"main": "gulpfile.js",
@@ -11,7 +11,7 @@
 		"deploy": "gulp deployFTP --build",
 		"svgSprive": "gulp svgSpriteTask"
 	},
-	"author": "jojo",
+	"author": "FLS",
 	"license": "ISC",
 	"dependencies": {
 		"gulp-cli": "^2.3.0"
@@ -19,7 +19,6 @@
 	"devDependencies": {
 		"browser-sync": "latest",
 		"del": "latest",
-		"glob": "^8.0.3",
 		"gulp": "latest",
 		"gulp-autoprefixer": "latest",
 		"gulp-clean-css": "latest",
@@ -44,7 +43,6 @@
 		"gulp-webpcss": "latest",
 		"gulp-zip": "latest",
 		"sass": "latest",
-		"singular": "^2.4.2",
 		"swiper": "latest",
 		"vinyl-ftp": "latest",
 		"webp-converter": "2.2.3",
