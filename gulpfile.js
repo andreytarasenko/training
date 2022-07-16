@@ -13,7 +13,7 @@ gulp.task('styles', () => {
 });
 
 gulp.task('scripts', () => {
-    return gulp.src('src/js/**/*.js')
+    return gulp.src('./src/js/**/*.js')
 		.pipe(minify({noSource: true}))
 		.pipe(concat('app.min.js'))
         .pipe(gulp.dest('./dist/js/'));
@@ -27,7 +27,7 @@ gulp.task('clean', () => {
 });
 
 gulp.task('watch', () => {
-    gulp.watch('src/**/*.scss', (done) => {
+    gulp.watch(['./src/**/*.scss', './src/js/**/*.js'], (done) => {
         gulp.series(['clean', 'styles', 'scripts'])(done);
     });
 });
