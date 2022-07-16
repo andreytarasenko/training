@@ -21,7 +21,6 @@
 	}
 
 	&__title {
-		@extend %title;
 		width: 100%;
 		font-size: 48px;
 	}
@@ -73,7 +72,6 @@
 		font-weight: 600;
 		border-bottom: 3px #ffce50 solid;
 		p:first-child {
-			@extend %title;
 		}
 		span {
 			color: #363738;
@@ -84,7 +82,6 @@
 }
 .vote__item-description {
 	:first-child {
-		@extend %title;
 		font-size: 20px;
 	}
 }
