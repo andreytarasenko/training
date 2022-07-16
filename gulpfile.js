@@ -1,8 +1,11 @@
-const gulp = require('gulp');
-const sass = require('gulp-sass')(require('sass'));
-const del = require('del');
-const minify = require("gulp-minify");
-const concat = require('gulp-concat');
+import gulp from 'gulp';
+import del from 'del';
+import minify from 'gulp-minify';
+import concat from 'gulp-concat';
+import dartSass from 'sass';
+import gulpSass from 'gulp-sass';
+
+const sass = gulpSass(dartSass);
 
 gulp.task('styles', () => {
     return gulp.src('./src/scss/**/*.scss', { sourcemaps: true })
