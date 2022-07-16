@@ -1,5 +1,6 @@
-@import url("./common/__import");
-@import url("./components/__import");
+@import "./common/import";
+@import "./components/import";
+
 body {
 	font-size: 16px;
 	padding: 0;

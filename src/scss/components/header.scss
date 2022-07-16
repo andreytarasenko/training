@@ -1,3 +1,5 @@
+@import url('../common/extends.scss');
+
 .separated-block {
 	position: absolute;
 	z-index: -1;
@@ -30,7 +32,6 @@
 	}
 
 	&__title {
-		@extend %title;
 		font-size: 52px;
 		max-width: 610px;
 	}
@@ -130,7 +131,6 @@
 	&__caption {
 		padding-top: 15px;
 		font-size: 20px;
-		@extend %title;
 		max-width: 250px;
 	}
 
