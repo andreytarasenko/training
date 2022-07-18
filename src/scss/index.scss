@@ -1,6 +1,5 @@
-@import "./common/import";
-@import "./components/import";
-
+@import "common/_import";
+@import "components/_import";
 body {
 	font-size: 16px;
 	padding: 0;
@@ -8,7 +7,6 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	font-family: "PT Sans", sans-serif;
-	color: #6b6b6c;
 }
 
 .container {
