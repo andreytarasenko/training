@@ -1,0 +1,76 @@
+.benefits {
+	background-color: rgb(125, 125, 125);
+	&__why-us {
+		background: url(/src/img/benefits_green-block.png),
+			url(/src/img/Rectangle\ 10.png), url(/src/img/benefits__trucker.png);
+		height: 453px;
+		background-size: 60% 100%, 50% 100%, 100% 100%;
+		overflow: hidden;
+		background-repeat: no-repeat;
+		max-width: 100%;
+		width: 100%;
+		background-position: -10%, 40%, 90%;
+		display: flex;
+		align-items: center;
+		background-color: rgb(79, 79, 79);
+	}
+
+	&__title {
+		@extend %title;
+		font-size: $fz-title-laptop;
+		color: rgb(255, 255, 255);
+		width: 400px;
+		text-align: left;
+		margin-left: 50px;
+		background-color: rgb(143, 143, 143);
+		@include tablet {
+			font-size: $fz-title-tablet;
+		}
+		@include mobile {
+			font-size: $fz-title-mobile;
+		}
+	}
+
+	&__wrapper {
+		background-color: blue;
+		width: 100%;
+		margin-top: 70px;
+	}
+
+	&__list {
+		background-color: green;
+	}
+
+	&__element {
+		background: yellow;
+	}
+
+	&__left-block {
+		background-color: red;
+	}
+
+	&__image {
+		background-color: bisque;
+		width: 80px;
+		height: 80px;
+	}
+
+	&__right-block {
+		background-color: brown;
+	}
+
+	&__caption {
+		background-color: aqua;
+		font-size: 20px;
+		font-weight: 600;
+	}
+
+	&__subcaption {
+		font-size: 16px;
+		background: greenyellow;
+	}
+}
+.title {
+}
+.subtitle {
+}

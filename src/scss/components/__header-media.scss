@@ -3,8 +3,6 @@
 		width: 100%;
 	}
 
-	.separated-block {
-	}
 	.header {
 		display: flex;
 		margin-top: 70px;
@@ -79,7 +77,10 @@
 	}
 }
 
-@media screen and (max-width: 375px) {
+@include mobile {
+	body {
+		font-size: 14px;
+	}
 	p {
 		margin-bottom: 0px;
 	}

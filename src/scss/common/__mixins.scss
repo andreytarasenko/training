@@ -1,25 +1,3 @@
-// @mixin placeholder($color, $size, $weight) {
-// 	&::-webkit-input-placeholder {
-// 		color: $color;
-// 		font-size: $size;
-// 		font-weight: $weight;
-// 	}
-// 	&:-moz-placeholder {
-// 		color: $color;
-// 		font-size: $size;
-// 		font-weight: $weight;
-// 	}
-// 	&::-moz-placeholder {
-// 		color: $color;
-// 		font-size: $size;
-// 		font-weight: $weight;
-// 	}
-// 	&:-ms-input-placeholder {
-// 		color: $color;
-// 		font-size: $size;
-// 		font-weight: $weight;
-// 	}
-// }
 @mixin desktop {
 	@media (min-width: 1441px) {
 		@content;
