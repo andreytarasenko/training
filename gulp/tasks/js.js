@@ -1,3 +1,4 @@
+import minifyJs from "gulp-minify";
 export const js = () => {
 	return app.gulp
 		.src(app.path.src.js, { sourcemaps: app.isDev })
@@ -9,5 +10,6 @@ export const js = () => {
 				})
 			)
 		)
+		.pipe(minifyJs())
 		.pipe(app.gulp.dest(app.path.build.js));
 };

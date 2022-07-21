@@ -1,15 +1,10 @@
-@mixin desktop {
-	@media (min-width: 1441px) {
-		@content;
-	}
-}
 @mixin laptop {
 	@media (min-width: 769px) and (max-width: 1440px) {
 		@content;
 	}
 }
 @mixin tablet {
-	@media (max-width: 768px) and (min-width: 376px) {
+	@media (min-width: 376px) and (max-width: 768px) {
 		@content;
 	}
 }

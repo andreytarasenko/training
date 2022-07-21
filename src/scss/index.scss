@@ -7,9 +7,19 @@ body {
 	font-weight: 400;
 	font-style: normal;
 	font-family: "PT Sans", sans-serif;
+	@include mobile {
+		font-size: 14px;
+	}
 }
 
 .container {
 	max-width: 1240px;
 	margin: 0 auto;
+	@include mobile {
+		width: 90%;
+		margin: 0 auto;
+	}
+}
+p {
+	margin-bottom: 0;
 }

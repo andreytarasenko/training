@@ -2,7 +2,7 @@ import dartSass from "sass";
 import gulpSass from "gulp-sass";
 import autoprefixer from "gulp-autoprefixer";
 import groupCssMediaQueries from "gulp-group-css-media-queries";
-
+import minifyCSS from "gulp-minify-css";
 const sass = gulpSass(dartSass);
 
 export const scss = () => {
@@ -32,5 +32,6 @@ export const scss = () => {
 				})
 			)
 		)
+		.pipe(minifyCSS())
 		.pipe(app.gulp.dest(app.path.build.css));
 };
