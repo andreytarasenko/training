@@ -1,0 +1,121 @@
+.clients {
+	background: $color-bg-green url("/src/img/clients__hieroglyph.png") no-repeat;
+	margin-top: 150px;
+	&__wrapper {
+		display: flex;
+		justify-content: space-evenly;
+		padding: 85px 30px 85px 30px;
+	}
+
+	&__title {
+		max-width: 480px;
+		@extend %title;
+		font-size: $fz-title-laptop;
+		color: white;
+		@include tablet {
+			font-size: $fz-title-tablet;
+		}
+		@include mobile {
+			font-size: $fz-title-mobile;
+		}
+	}
+
+	&__block-content {
+		border-radius: 8px;
+		width: 650px;
+		background-color: rgb(255, 255, 255);
+		padding: 30px 40px 60px 40px;
+	}
+
+	&__info {
+		display: flex;
+		position: relative;
+		justify-content: space-between;
+		// ::before {
+		// 	content: "";
+		// }
+		padding: 0 0 30px 0;
+		border-bottom: #d7d7dda2 0.5px solid;
+	}
+
+	&__logo {
+		object-fit: none;
+	}
+
+	&__description {
+		padding-left: 20px;
+		display: flex;
+		flex-direction: column;
+
+		font-size: 11px;
+		text-align: start;
+		max-width: 300px;
+		@extend %subcaption;
+	}
+
+	&__description-item {
+		padding: 0;
+		margin: 0;
+	}
+
+	&__table {
+		font-size: 14px;
+		th {
+			border: 1px solid rgba(30, 30, 30, 0.338);
+			padding: 10px 0;
+			text-align: center;
+			color: white;
+			font-size: 16px;
+			font-weight: 600;
+			background-color: $color-bg-green;
+		}
+		td {
+			vertical-align: top;
+			border: rgba(30, 30, 30, 0.338) 1px solid;
+			padding: 15px;
+		}
+		i {
+			color: #ffce50;
+			padding: 0 2px;
+		}
+	}
+
+	&__images {
+		min-width: 81px;
+		width: 100%;
+	}
+
+	&__characteristic {
+	}
+
+	&__price {
+		@extend %title;
+	}
+
+	&__location-name {
+		@extend %title;
+	}
+
+	&__location-description {
+	}
+
+	&__rating {
+	}
+
+	&__face-name {
+		@extend %title;
+	}
+
+	&__face-description {
+	}
+
+	&__face-number {
+		@extend %title;
+	}
+}
+.fa-solid {
+}
+.fa-star {
+}
+.fa-star-half {
+}
