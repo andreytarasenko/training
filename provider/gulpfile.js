@@ -10,8 +10,8 @@ global.app = {
 };
 
 import { reset } from "./gulp/tasks/reset.js";
-import { scss } from "./gulp/tasks/scss.js";
-import { js } from "./gulp/tasks/js.js";
+import { scss } from "./gulp/tasks/styles-generate.js";
+import { js } from "./gulp/tasks/script-generate.js";
 function watcher() {
 	gulp.watch(path.watch.scss, scss);
 	gulp.watch(path.watch.js, js);

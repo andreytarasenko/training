@@ -18,6 +18,8 @@
 	}
 }
 .block-welcome__subtitle-item--invisible {
+	@extend %subcaption;
+
 	@include tablet {
 		display: none;
 	}
@@ -26,12 +28,15 @@
 	}
 }
 .block-welcome__subtitle-item--visible {
+	@extend %subcaption;
+
 	@include tablet {
 		display: inline;
 		font-size: 14.5px;
 		padding: 10px 0;
 		font-weight: normal;
 		width: 100%;
+		color: black;
 	}
 	@include mobile {
 		display: inline;
@@ -39,6 +44,7 @@
 		padding: 10px 0;
 		font-weight: normal;
 		width: 100%;
+		color: white;
 	}
 }
 .block-welcome {
@@ -101,6 +107,7 @@
 	&__subtitle {
 		margin: 25px 0 0 25px;
 		max-width: 555px;
+		@extend %subcaption;
 		@include tablet {
 		}
 		@include mobile {
@@ -120,7 +127,7 @@
 		text-align: center;
 		border: none;
 		margin-top: 30px;
-		border-bottom: 4px #ffce50 solid;
+		border-bottom: 4px solid $outline-yellow;
 		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
 		@include tablet {
 		}
@@ -146,7 +153,6 @@
 			@include tablet {
 			}
 			@include mobile {
-				color: header__link;
 				font-weight: 500;
 				font-size: 15px;
 				color: white;

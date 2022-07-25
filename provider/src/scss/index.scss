@@ -6,7 +6,7 @@ body {
 	margin: 0;
 	font-weight: 400;
 	font-style: normal;
-	font-family: "PT Sans", sans-serif;
+	font-family: $ff-main, sans-serif;
 	@include mobile {
 		font-size: 14px;
 	}
@@ -15,6 +15,11 @@ body {
 .container {
 	max-width: 1240px;
 	margin: 0 auto;
+	padding: 0 10px;
+
+	@include tablet {
+		padding: 0 30px;
+	}
 	@include mobile {
 		width: 90%;
 		margin: 0 auto;
