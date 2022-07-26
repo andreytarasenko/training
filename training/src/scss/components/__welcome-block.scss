@@ -12,38 +12,28 @@
 	}
 	@include mobile {
 		width: 100%;
-		right: 0;
-		top: 0;
 		height: 710px;
 	}
 }
 .block-welcome__subtitle-item--invisible {
 	@extend %subcaption;
-
-	@include tablet {
-		display: none;
-	}
-	@include mobile {
+	@include tablet-and-mobile {
 		display: none;
 	}
 }
 .block-welcome__subtitle-item--visible {
 	@extend %subcaption;
-
-	@include tablet {
+	@include tablet-and-mobile {
 		display: inline;
 		font-size: 14.5px;
 		padding: 10px 0;
 		font-weight: normal;
 		width: 100%;
+	}
+	@include tablet {
 		color: black;
 	}
 	@include mobile {
-		display: inline;
-		font-size: 14.5px;
-		padding: 10px 0;
-		font-weight: normal;
-		width: 100%;
 		color: white;
 	}
 }
@@ -52,14 +42,14 @@
 	margin-top: 90px;
 	flex-direction: row;
 	padding: 0 40px;
-
-	@include tablet {
+	@include tablet-and-mobile {
 		flex-wrap: wrap;
+	}
+	@include tablet {
 		flex-direction: column;
 		margin-top: 70px;
 	}
 	@include mobile {
-		flex-wrap: wrap;
 		margin-top: 0;
 		padding: 0;
 
@@ -71,20 +61,17 @@
 		flex-direction: column;
 		justify-content: center;
 		margin-bottom: 30px;
-		@include tablet {
+		@include tablet-and-mobile {
+			padding-bottom: 0;
 			padding-left: 0px;
 			display: flex;
 			max-width: 100%;
 			max-height: 100%;
+		}
+		@include tablet {
 			justify-content: center;
-			padding-bottom: 0;
 		}
 		@include mobile {
-			padding-left: 0px;
-			display: flex;
-			max-width: 100%;
-			max-height: 100%;
-			padding-bottom: 0;
 			margin-bottom: 0;
 			margin-top: 60px;
 			color: rgb(255, 255, 255);
@@ -96,10 +83,10 @@
 		font-size: 52px;
 		max-width: 610px;
 		@include tablet {
-			font-size: 48px;
+			font-size: $fz-title-tablet;
 		}
 		@include mobile {
-			font-size: 28px;
+			font-size: $fz-title-mobile;
 			color: rgb(255, 255, 255);
 		}
 	}
@@ -108,8 +95,6 @@
 		margin: 25px 0 0 25px;
 		max-width: 555px;
 		@extend %subcaption;
-		@include tablet {
-		}
 		@include mobile {
 			margin: 0;
 		}
@@ -117,10 +102,6 @@
 
 	.block-welcome__subtitle-item {
 		margin: 0;
-		@include tablet {
-		}
-		@include mobile {
-		}
 	}
 	&__link {
 		max-width: 120px;
@@ -129,29 +110,22 @@
 		margin-top: 30px;
 		border-bottom: 4px solid $outline-yellow;
 		transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-		@include tablet {
-		}
+
 		@include mobile {
 			margin-top: 10px;
-
 			margin-bottom: 40px;
 			color: white;
 		}
 		&:hover {
 			border-bottom: 5px rgb(0, 255, 64) solid;
 			transition: cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
-			@include tablet {
-			}
-			@include mobile {
-			}
 		}
 		a {
 			font-weight: bold;
 			color: black;
 			font-size: 16px;
 			line-height: 24px;
-			@include tablet {
-			}
+
 			@include mobile {
 				font-weight: 500;
 				font-size: 15px;
@@ -162,10 +136,6 @@
 			font-weight: bold;
 			color: rgb(0, 104, 69);
 			text-decoration: none;
-			@include tablet {
-			}
-			@include mobile {
-			}
 		}
 	}
 
@@ -175,15 +145,7 @@
 		width: 50%;
 		padding-left: 20px;
 		border-radius: 5%;
-		@include tablet {
-			object-fit: cover;
-			max-width: 690px;
-			width: 100%;
-			max-height: 314px;
-			margin: 0 auto;
-			padding-left: 0px;
-		}
-		@include mobile {
+		@include tablet-and-mobile {
 			object-fit: cover;
 			max-width: 690px;
 			width: 100%;
