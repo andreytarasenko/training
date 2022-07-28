@@ -18,3 +18,8 @@
 		@content;
 	}
 }
+@mixin table {
+	@media (max-width: 650px) {
+		@content;
+	}
+}

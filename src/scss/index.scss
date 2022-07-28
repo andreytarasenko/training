@@ -18,11 +18,11 @@ body {
 	padding: 0 10px;
 
 	@include tablet {
-		padding: 0 30px;
+		padding: 0 10px;
 	}
 	@include mobile {
-		width: 90%;
-		margin: 0 auto;
+		width: 100%;
+		padding: 0;
 	}
 }
 p {

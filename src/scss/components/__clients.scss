@@ -9,10 +9,14 @@
 		@media screen and (max-width: 1000px) {
 			flex-wrap: wrap;
 		}
+		@include mobile {
+			padding: 100px 0;
+		}
 	}
 
 	&__title {
 		@extend %title;
+		padding-right: 30px;
 		font-size: $fz-title-laptop;
 		color: white;
 		@include tablet {
@@ -20,6 +24,8 @@
 		}
 		@include mobile {
 			font-size: $fz-title-mobile;
+			padding-right: 0;
+			margin-bottom: 40px;
 		}
 	}
 
@@ -28,29 +34,41 @@
 		border-radius: 8px;
 		background-color: rgb(255, 255, 255);
 		padding: 30px 40px 60px 40px;
+		@include table {
+			padding: 0px 20px;
+		}
 	}
 
 	&__info {
 		display: flex;
 		justify-content: space-between;
 
-		padding: 0 0 30px 0;
+		padding: 30px 0 30px 0;
 		border-bottom: #d7d7dda2 0.5px solid;
+		@include tablet {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__logo {
 		object-fit: none;
+		@include mobile {
+			margin: 0 auto;
+		}
 	}
 
 	&__description {
 		padding-left: 20px;
 		display: flex;
 		flex-direction: column;
-
+		padding-top: 20px;
 		font-size: 11px;
 		text-align: start;
 		max-width: 300px;
 		@extend %subcaption;
+		@include mobile {
+			display: none;
+		}
 	}
 
 	&__description-item {
@@ -58,17 +76,13 @@
 		margin: 0;
 	}
 }
-.j0j0 {
-	display: flex;
-	flex-direction: column;
-	padding: 24px 15px 24px 15px;
-}
 
-.clients__table--wrapper {
-	// overflow-x: auto;
-}
 .clients {
 	&__table {
+		@include table {
+			display: none;
+		}
+
 		border: none;
 		width: 100%;
 		font-size: 14px;
@@ -86,12 +100,15 @@
 		}
 		tbody {
 			background: #f5f5f8;
+			tr {
+			}
 		}
 		tr {
 		}
 		td {
 			border: 1px solid black;
 			vertical-align: top;
+			padding: 24px 15px 24px 15px;
 		}
 		td:nth-child(1) {
 			width: 15%;
@@ -126,7 +143,7 @@
 	}
 
 	&__manufacturer-rating {
-		color: rgb(219, 213, 21);
+		color: #ffce50;
 	}
 
 	&__face {
@@ -140,9 +157,131 @@
 		@extend %title;
 	}
 }
+
+.clients-dropdown {
+	display: none;
+	color: #6b6b6c;
+	@include table {
+		display: block;
+	}
+	&__block-dropdown {
+		position: relative;
+	}
+	&__but {
+		@extend %title;
+		background: $color-bg-green;
+		color: white;
+		width: 100%;
+		text-align: left;
+		padding: 10px 15px;
+		border-radius: 2px;
+	}
+
+	&__content {
+		display: none;
+		z-index: 1;
+		position: absolute;
+	}
+	&__link {
+		padding: 10px 15px;
+		color: white;
+		&:hover {
+			color: #ffce50;
+		}
+	}
+	&__link--active {
+		color: rgb(215, 0, 0);
+		&:hover {
+			color: #b7ff00;
+		}
+	}
+	&__block-dropdown:hover {
+		cursor: pointer;
+		.clients-dropdown__content {
+			display: flex;
+			flex-direction: column;
+			width: 100%;
+			background-color: $color-bg-green;
+			padding: 10px 15px;
+		}
+	}
+	&__client {
+		background-color: #f5f5f8;
+		font-size: 14px;
+		padding: 0 20px;
+	}
+
+	&__element-characteristic {
+		display: flex;
+		align-items: center;
+		justify-content: space-evenly;
+		@include mobile {
+		}
+	}
+
+	&__element {
+		padding: 20px 0px;
+		border-bottom: #b2b2b36e 0.5px solid;
+		&:last-child {
+			border-bottom: none;
+			margin-bottom: 20px;
+		}
+	}
+
+	&__img {
+		object-fit: cover;
+		min-width: 80px;
+	}
+
+	&__description {
+		padding-left: 20px;
+		max-width: 300px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__price {
+		@extend %title;
+	}
+
+	&__element-manufacter {
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+	}
+
+	&__manufacturer-name {
+		@extend %title;
+	}
+
+	&__manufacturer-location {
+		padding: 10px 0;
+	}
+
+	&__manufacturer-rating {
+		color: #ffce50;
+	}
+
+	&__element-contact {
+	}
+
+	&__face {
+		@extend %title;
+	}
+
+	&__post {
+		padding: 10px 0;
+	}
+
+	&__number {
+		@extend %title;
+	}
+}
 .fa-solid {
 }
 .fa-star {
+	padding-right: 5px;
 }
 .fa-star-half {
 }
