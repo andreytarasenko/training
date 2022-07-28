@@ -6,6 +6,9 @@
 		display: flex;
 		padding: 100px 5%;
 		justify-content: space-evenly;
+		@media screen and (max-width: 1000px) {
+			flex-wrap: wrap;
+		}
 	}
 
 	&__title {
@@ -21,6 +24,7 @@
 	}
 
 	&__block-content {
+		width: 100%;
 		border-radius: 8px;
 		background-color: rgb(255, 255, 255);
 		padding: 30px 40px 60px 40px;
@@ -59,14 +63,7 @@
 	flex-direction: column;
 	padding: 24px 15px 24px 15px;
 }
-.j0j01 {
-}
-.j0j02 {
-}
-.j0j03 {
-}
-.j0j04 {
-}
+
 .clients__table--wrapper {
 	// overflow-x: auto;
 }
@@ -95,6 +92,18 @@
 		td {
 			border: 1px solid black;
 			vertical-align: top;
+		}
+		td:nth-child(1) {
+			width: 15%;
+		}
+		td:nth-child(2) {
+			width: 25%;
+		}
+		td:nth-child(3) {
+			width: 30%;
+		}
+		td:nth-child(4) {
+			width: 30%;
 		}
 	}
 
