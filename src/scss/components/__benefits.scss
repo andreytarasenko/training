@@ -7,7 +7,6 @@
 		background-size: 60% 100%, 50% 100%, 100% 100%;
 		overflow: hidden;
 		background-repeat: no-repeat;
-		max-width: 100%;
 		width: 100%;
 		background-position: -10%, 40%, 90%;
 		display: flex;
@@ -92,6 +91,8 @@
 	}
 
 	&__image {
+		min-width: 50px;
+
 		@include mobile {
 			min-width: 50px;
 		}
