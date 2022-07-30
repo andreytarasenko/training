@@ -10,3 +10,33 @@
 	font-weight: 400;
 	color: #6b6b6c;
 }
+%fzm-title {
+	@extend %title;
+	font-size: $fz-title-laptop;
+	@include tablet {
+		font-size: $fz-title-tablet;
+	}
+	@include mobile {
+		font-size: $fz-title-mobile;
+	}
+}
+%fzm-caption {
+	@extend %title;
+	font-size: $fz-caption-laptop;
+	@include tablet {
+		font-size: $fz-caption-tablet;
+	}
+	@include mobile {
+		font-size: $fz-caption-mobile;
+	}
+}
+%fzm-subcaption {
+	@extend %subcaption;
+	font-size: $fz-subcaption-laptop;
+	@include tablet {
+		font-size: $fz-subcaption-tablet;
+	}
+	@include mobile {
+		font-size: $fz-subcaption-mobile;
+	}
+}
