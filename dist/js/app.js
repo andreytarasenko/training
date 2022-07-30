@@ -13,10 +13,10 @@ for (i = 0; i < acc.length; i++) {
 		}
 	});
 }
-let cdLink = document.querySelectorAll("clients-dropdown__link");
+let cdLink = document.querySelectorAll(".clients-dropdown__link");
 for (i = 0; i < cdLink.length; i++) {
 	cdLink[i].addEventListener("click", function () {
+		console.log("sanya fashist");
 		cdLink.classList.toggle("clients-dropdown__link--active");
 	});
 }
-console.log("sanya fashist");
